@@ -27,6 +27,14 @@ app.get('/staff', (req, res) => {
     });
 });
 
+//rendering Staff Show Page
+app.get('/:staffId', (req,res) => {
+  const index = req.params.staffId
+  res.render('staffshow.ejs', {
+    item: STAFF.members[index]
+  })
+})
+
 
 // rendering Contact Us'
 app.get('/contact', (req, res) => {
@@ -67,6 +75,36 @@ const STAFF = {
     }
 
    ]
+}
+
+const WORK = {
+  episodes : [
+   {
+       name: 'Bugs Bunny',
+       position: 'CEO',
+       salary: '1.5 million',
+       tenure: '86 Years of Service'
+   },
+   {
+       name: 'Elmer Fudd',
+       position: 'CFO',
+       salary: '1 million',
+       tenure: '87 Years of Service'
+   },
+   {
+       name: 'Daffy Duck',
+       position: 'CTO',
+       salary: '800K',
+       tenure: '87 Years of Service'
+   },
+   {
+       name: 'Tazmanian Devil (Taz)',
+       position: 'Head of Security',
+       salary: '80K',
+       tenure: '70 Years of Service'
+   }
+
+  ]
 }
 
 

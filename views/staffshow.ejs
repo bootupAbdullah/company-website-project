@@ -6,7 +6,11 @@
   <title>Home</title>
 </head>
 <body>
-  <h1>Past Work</h1>
   <%- include('./partials/nav') %>
+  <h1><%= item.name %>'s Page</h1>
+  <p>Position: <%= item.position %> <br />
+    Salary: <%= item.salary %> <br />
+    Tenure: <%= item.tenure %> </p>
+
 </body>
 </html>
