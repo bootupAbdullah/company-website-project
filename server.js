@@ -27,15 +27,6 @@ app.get('/staff', (req, res) => {
     });
 });
 
-//rendering Staff Show Page
-app.get('/:staffId', (req,res) => {
-  const index = req.params.staffId
-  res.render('staffshow.ejs', {
-    item: STAFF.members[index]
-  })
-})
-
-
 // rendering Contact Us'
 app.get('/contact', (req, res) => {
     res.render('contact-us.ejs');
@@ -43,8 +34,21 @@ app.get('/contact', (req, res) => {
 
 // rendering 'External Links'
 app.get('/externalLinks', (req, res) => {
-    res.render('external-links.ejs');
+    res.render('external-links.ejs', {
+      pages: LINKS.members
+    });
 });
+
+//rendering Staff Show Page -- why does this break anything below it?
+app.get('/:staffId', (req,res) => {
+  const banana = req.params.staffId
+  res.render('staffshow.ejs', {
+    item: STAFF.members[banana]
+  });
+});
+
+
+
 
 
 const STAFF = {
@@ -77,35 +81,27 @@ const STAFF = {
    ]
 }
 
-const WORK = {
-  episodes : [
-   {
-       name: 'Bugs Bunny',
-       position: 'CEO',
-       salary: '1.5 million',
-       tenure: '86 Years of Service'
-   },
-   {
-       name: 'Elmer Fudd',
-       position: 'CFO',
-       salary: '1 million',
-       tenure: '87 Years of Service'
-   },
-   {
-       name: 'Daffy Duck',
-       position: 'CTO',
-       salary: '800K',
-       tenure: '87 Years of Service'
-   },
-   {
-       name: 'Tazmanian Devil (Taz)',
-       position: 'Head of Security',
-       salary: '80K',
-       tenure: '70 Years of Service'
-   }
+const LINKS = {
+  members : [
+    {
+        references: 'Bugs Bunny',
+        
+    },
+    {
+        references: 'Elmer Fudd',
+        
+    },
+    {
+        references: 'Daffy Duck',
+        
+    },
+    {
+        references: 'Tazmanian Devil (Taz)',
+        
+    }
 
-  ]
-}
+    ]
+  }
 
 
 

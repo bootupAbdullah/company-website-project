@@ -9,8 +9,8 @@
   <h1>Staff</h1>
   <%- include('./partials/nav') %>
   <ul>
-    <% staff.forEach((item, index) => { %>
-      <a href="/<%= index %>">    
+    <% staff.forEach((item, orange) => { %>
+      <a href="/<%= orange %>">    
       <li><%= item.name %></li>
     </a>  
     <% }) %>
