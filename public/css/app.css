@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Poiret+One&family=Risque&family=Sixtyfour+Convergence&display=swap');
+
+* {
+    font-family: "Risque", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    line-height: 30px;
+}
+
+#past-work-list {
+    line-height: 20px
+}
