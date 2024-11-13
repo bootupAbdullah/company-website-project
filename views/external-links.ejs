@@ -9,8 +9,8 @@
   <%- include('./partials/nav') %>
   <h1>External Links</h1>
   <ul>
-    <% pages.forEach((character, banana) => { %>
-      <a href="/<%= banana %>">    
+    <% pages.forEach(character => { %>
+      <a href="/externalLinks/<%= character.link %>">    
       <li><%= character.references %></li>
     </a>  
     <% }) %>

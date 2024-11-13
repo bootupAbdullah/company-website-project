@@ -6,7 +6,13 @@
   <title>Home</title>
 </head>
 <body>
+    <%- include('./partials/nav') %>
   <h1>Past Work</h1>
-  <%- include('./partials/nav') %>
+  <ul>
+    <% renderPastWorks.forEach((item, index) => { %>
+      <a href="/pastWorks/<%= index %>">    
+      <li><%= item.title %></li>
+    </a>  
+    <% }) %>
 </body>
 </html>

@@ -6,11 +6,11 @@
   <title>Home</title>
 </head>
 <body>
-  <h1>Staff</h1>
   <%- include('./partials/nav') %>
+  <h1>Staff</h1>
   <ul>
-    <% staff.forEach((item, orange) => { %>
-      <a href="/<%= orange %>">    
+    <% staff.forEach((item, index) => { %>
+      <a href="/staff/<%= index %>">    
       <li><%= item.name %></li>
     </a>  
     <% }) %>
