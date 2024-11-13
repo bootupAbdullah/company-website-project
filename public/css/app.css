@@ -4,16 +4,46 @@
     font-family: "Risque", serif;
     font-weight: 400;
     font-style: normal;
+  
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://miss0exclusive1.wordpress.com/wp-content/uploads/2014/05/wpid-bosko-n-honey.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 80px;
 }
 
 p {
     line-height: 30px;
 }
 
+ul {
+    line-height: 50px;
+    font-size: 40px
+}
+
+
 #past-work-list {
-    line-height: 20px
+    line-height: 50px;
+    font-size: 40px
+}
+
+#past-work-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#past-work-header {
+    font-size: 80px
 }

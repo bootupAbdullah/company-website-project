@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+
+app.use(express.static('public')); //tells express to try to match requests with files in the directory called 'public'
 // ====================================================================== obejects
 
 // creating objects for 'staff' page
