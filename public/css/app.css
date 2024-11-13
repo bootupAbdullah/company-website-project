@@ -12,8 +12,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("https://miss0exclusive1.wordpress.com/wp-content/uploads/2014/05/wpid-bosko-n-honey.gif");
-    background-repeat: no-repeat;
+    background: url("https://i.etsystatic.com/35903788/r/il/079179/4098971680/il_794xN.4098971680_qzdp.jpg");
+   
     background-size: cover;
 }
 
@@ -23,11 +23,25 @@ h1 {
 
 p {
     line-height: 30px;
+    
+  /* Red background with 50% opacity */
+background: hsla(0, 24%, 93%, 0.466);  /* learned that hsla can change the background color according to the opacity without affecting the text*/
+        /* Text color remains fully opaque */
+        color: #000; 
+        font-weight: 400;
+        font-size: larger;
+    
 }
 
 ul {
-    line-height: 50px;
-    font-size: 40px
+    line-height: 60px;
+    font-size: 100px;
+/* Red background with 50% opacity */
+background: hsla(0, 24%, 93%, 0.466);  /* learned that hsla can change the background color according to the opacity without affecting the text*/
+        /* Text color remains fully opaque */
+
+        font-weight: 400;
+        font-size: larger;
 }
 
 
